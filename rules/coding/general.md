@@ -1,0 +1,27 @@
+# Code design and best practices
+
+- Keep the design simple. Prefer fewer concepts, layers, and abstractions.
+- Avoid premature abstractions. Introduce one only when it clearly reduces complexity or duplication.
+- Functional core, imperative shell.
+- Group code into semantically related modules. No generic utils.
+- Keep module dependencies explicit, minimal, and unidirectional. Avoid circular dependencies.
+- Prefer composition over inheritance and large multipurpose abstractions.
+- When expanding an existing feature, identify the spot that minimizes complexity. Prefer a principled rewrite over scrappy patches.
+- Validate preconditions as early as possible, so as to reduce useless optionals and exception handling scattered throughout the code.
+- Validate configuration and external inputs at system boundaries. Internal code should operate on already-valid data.
+- Do not scatter defensive runtime checks across the codebase. Establish invariants once and rely on them.
+- Hard-crash on violated invariants. Do not silently recover from states that should be impossible.
+- No defaults for required environment variables. Missing configuration should fail explicitly.
+- Keep optional values to a minimum. A value should be optional only when absence is a valid domain state.
+- Prefer explicit data flow. Avoid hidden global state, implicit mutation, and invisible dependencies.
+- A function must have a clear reason to exist and be self-contained.
+- Keep functions focused. A function should perform one coherent operation and expose a predictable contract.
+- A single-line wrapper function is a big code smell unless it establishes a meaningful boundary or contract.
+- Functions should accept only the data they actually need. Avoid passing large objects when only a small subset of their fields is used; prefer narrow, explicit parameters or a purpose-built smaller type.
+- Keep error handling at the layer that can actually handle the error. Do not catch exceptions only to suppress or rethrow them unchanged.
+- Prefer deterministic behaviour over implicit fallbacks and hidden recovery paths.
+- Use structured logging with consistent fields and meaningful context.
+- Log meaningful operations, state transitions, external calls, and failures. Avoid noisy logs for trivial internal steps.
+- Minimal comments. Comments are required only for truly complex behaviour, non-obvious constraints, or logic that cannot be made self-explanatory through code structure and naming.
+- Comments explain why, not what. They must add value rather than repeat the implementation in natural language.
+- Optimize for local reasoning. A module or function should be understandable without having to inspect many unrelated parts of the codebase.
