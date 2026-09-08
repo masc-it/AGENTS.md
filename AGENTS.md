@@ -3,6 +3,10 @@
 Before starting some work, make sure to read the rule files relevant to the task at hand.
 It's important you keep in mind the user's preferences.
 
+## Behaviour
+
+- In every session, read and follow [`rules/behaviour/sessions.md`](rules/behaviour/sessions.md).
+
 ## Coding
 
 - For any code change, read [`rules/coding/general.md`](rules/coding/general.md).
