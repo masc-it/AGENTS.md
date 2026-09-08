@@ -1,5 +1,6 @@
 # Bug fixes
 
-Fix bugs by correcting or replacing the flawed underlying logic rather than adding workaround layers or duplicated state.
-
-Identify reusable code and clear responsibilities. If a complete rewrite of the impacted code is the best solution, proceed with it. The code is expected to remain in use for years.
+- Reproduce the bug or establish a reliable failing case before changing code. If you cannot reproduce it, state what evidence you have and what remains uncertain.
+- Trace the failure to its cause. Check whether the same cause affects other callers or paths within the affected responsibility.
+- Add a regression test that fails before the fix and passes after it. If an automated test is not practical, document a repeatable manual check.
+- Verify the original failure and nearby behaviour after the fix.
