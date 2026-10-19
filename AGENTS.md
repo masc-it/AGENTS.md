@@ -11,10 +11,15 @@ It's important you keep in mind the user's preferences.
 
 - For any code change: [`rules/coding/general.md`](rules/coding/general.md).
 - For bug investigation or fixes: [`rules/coding/bug-fixes.md`](rules/coding/bug-fixes.md).
+- For code testing: [`rules/coding/testing.md`](rules/coding/testing.md).
 - For Python work: [`rules/coding/python/tooling.md`](rules/coding/python/tooling.md).
 - For TypeScript, Svelte, or SvelteKit work: [`rules/coding/ts/svelte.md`](rules/coding/ts/svelte.md).
 - For Tailwind, HTMX, or web UI work: [`rules/coding/web/ui.md`](rules/coding/web/ui.md).
 - For SQL or database work: [`rules/coding/sql/queries.md`](rules/coding/sql/queries.md).
+
+## Git
+
+- When the user mentions PRs, releases, tags, or related GitHub work: [`rules/git/github.md`](rules/git/github.md).
 
 ## Documentation
 
