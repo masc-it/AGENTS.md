@@ -8,6 +8,7 @@ For relevant domain context, consult [`domain-knowledge/`](domain-knowledge/), a
 ## Behaviour
 
 - In every session, read and follow [`rules/behaviour/sessions.md`](rules/behaviour/sessions.md).
+- In every session, read and follow [`rules/docs/writing.md`](rules/docs/writing.md) for all prose, including chat replies.
 
 ## Coding
 
@@ -24,7 +25,6 @@ For relevant domain context, consult [`domain-knowledge/`](domain-knowledge/), a
 
 ## Writing
 
-- For any document or user-facing prose, technical or nontechnical: [`rules/docs/writing.md`](rules/docs/writing.md).
 - For implementation plans, specifications, or task documents: [`rules/docs/work-plans.md`](rules/docs/work-plans.md).
 
 Read every applicable file when a task spans multiple areas.
